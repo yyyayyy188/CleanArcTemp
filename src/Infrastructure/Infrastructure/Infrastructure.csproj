@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Domain\Domain.csproj" />
+    <ProjectReference Include="..\..\Domain\DomainShared\DomainShared.csproj" />
+    <ProjectReference Include="..\..\Application\Application\Application.csproj" />
+    <ProjectReference Include="..\EntityFrameworkCore\EntityFrameworkCore.csproj" />
+  </ItemGroup>
+  
+</Project>

@@ -20,7 +20,8 @@ public readonly struct GuidKey : IAggregateKey<Guid>
 }
 
 
-public abstract class BaseAggregate<TKey> where TKey : struct, IAggregateKey<TKey>
+public abstract class BaseAggregate<TKey> : IAggregateRoot
+     where TKey : struct, IAggregateKey<TKey>
 {
     public required TKey Id {get ;set;} = TKey.NewKey();
 
